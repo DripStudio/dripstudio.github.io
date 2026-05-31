@@ -4,48 +4,116 @@
 <title>Shop - DripStudio</title>
 
 <style>
+
 body{
     background:#0f0f0f;
     color:white;
     font-family:Arial,sans-serif;
+    margin:0;
+}
+
+header{
     text-align:center;
-    padding:50px;
+    padding:60px 20px;
+    background:#111;
 }
 
 h1{
-    margin-bottom:40px;
+    margin:0;
+    font-size:48px;
 }
 
-.collection{
-    display:block;
-    width:300px;
-    margin:20px auto;
-    padding:20px;
+.subtitle{
+    color:#bbb;
+    margin-top:10px;
+}
+
+.collections{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    padding:60px 20px;
+}
+
+.card{
+    width:260px;
     background:#1b1b1b;
+    border-radius:12px;
+    padding:30px;
+    text-align:center;
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#bbb;
+}
+
+.button{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 20px;
+    background:white;
+    color:black;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.home{
+    text-align:center;
+    padding:40px;
+}
+
+.home a{
     color:white;
     text-decoration:none;
-    border-radius:12px;
-    font-size:24px;
 }
 
-.collection:hover{
-    background:#2a2a2a;
-}
 </style>
-
 </head>
 
 <body>
 
-<h1>Choose a Collection</h1>
+<header>
+    <h1>DRIPSTUDIO</h1>
+    <p class="subtitle">Choose a Collection</p>
+</header>
 
-<a class="collection" href="shirts.html">👕 Shirts</a>
+<section class="collections">
 
-<a class="collection" href="hoodies.html">🧥 Hoodies</a>
+    <div class="card">
+        <h2>Shirts</h2>
+        <p>Explore our shirt collection.</p>
+        <a class="button" href="shirts.html">View Collection</a>
+    </div>
 
-<a class="collection" href="jerseys.html">⚽ Jerseys</a>
+    <div class="card">
+        <h2>Winter Collection</h2>
+        <p>Stay warm in style.</p>
+        <a class="button" href="winter.html">View Collection</a>
+    </div>
 
-<a class="collection" href="accessories.html">⌚ Accessories</a>
+    <div class="card">
+        <h2>Trousers</h2>
+        <p>Comfort and everyday wear.</p>
+        <a class="button" href="trousers.html">View Collection</a>
+    </div>
+
+    <div class="card">
+        <h2>Accessories</h2>
+        <p>Complete your look.</p>
+        <a class="button" href="accessories.html">View Collection</a>
+    </div>
+
+</section>
+
+<div class="home">
+    <a href="index.html">← Back to Home</a>
+</div>
 
 </body>
 </html>
